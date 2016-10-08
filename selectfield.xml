@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+	<name>plg_user_selectfield</name>
+	<creationDate>08 Oktober 2016</creationDate>
+	<author>Niels Nübel</author>
+	<authorEmail>info@niels-nuebel.de</authorEmail>
+	<authorUrl>http://www.niels-nuebel.de</authorUrl>
+	<copyright>Copyright © 2013 - 2016 niels-nuebel.de</copyright>
+	<version>1.0.0</version>
+	<description>PLG_USER_SELECTFIELD_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="selectfield">selectfield.php</filename>
+		<folder>profiles</folder>
+		<folder>language</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="register-require-user" type="spacer"
+					   label="PLG_USER_SELECTFIELD_FIELD_NAME_REGISTER_REQUIRE_USER"
+				/>
+
+				<field name="register-require_member" type="list"
+					   description="PLG_USER_SELECTFIELD_FIELD_MEMBER_DESC"
+					   label="PLG_USER_SELECTFIELD_FIELD_MEMBER_LABEL"
+				>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field name="profile-require-user" type="spacer"
+					   label="PLG_USER_SELECTFIELD_FIELD_NAME_PROFILE_REQUIRE_USER"
+				/>
+
+				<field name="profile-require_member" type="list"
+					   description="PLG_USER_SELECTFIELD_FIELD_MEMBER_DESC"
+					   label="PLG_USER_SELECTFIELD_FIELD_MEMBER_LABEL"
+				>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>
